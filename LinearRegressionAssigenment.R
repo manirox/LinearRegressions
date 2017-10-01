@@ -19,6 +19,9 @@ SoundinDb <- function(req1,req2) {
 resultatntfun <-SoundinDb("/Users/manishreddybendhi/Desktop/Git/GitMeashineLearningRepo/Liearner Regression/LinearRegressions","airfoil_self_noise.dat")
 
 resultatntfun
+##Writing the results to an output file 
+
+write.table(resultatntfun, file="result.txt", quote=F)
 
 #using the iris data on the lm model to predict the outcomes of flowers 
 #Reading the model in the csv file 
